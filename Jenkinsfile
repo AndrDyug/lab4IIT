@@ -4,7 +4,7 @@ pipeline {
 
     agent any
     stages {
-		stage('Interapt') {
+		stage('Interrupt') {
 			steps{
 				script {
 					def buildNumber = env.BUILD_NUMBER as int
