@@ -2,7 +2,7 @@ const { Telegraf } = require('telegraf')
 
 const bot = new Telegraf("5437006460:AAFQM3cXmSGHwTQBOsb7Nu6I7SMK60cgPMc")
 bot.start((ctx) => ctx.reply('start'))
-bot.hears(`hello`, (ctx) => ctx.reply(`hello world`))
+bot.hears(`hello`, (ctx) => ctx.reply(`hello`))
 bot.launch()
 
 process.once('SIGINT', () => bot.stop('SIGINT'))
